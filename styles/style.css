@@ -1,0 +1,54 @@
+/*General*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{    
+    font-family: 'Roboto', sans-serif;    
+}
+a{
+    text-decoration: none;
+}
+.header{
+    display: inline-flex;
+}
+ul li{
+    list-style: none;    
+}
+nav ul li{
+   display: inline;
+   line-height: 28px;
+}
+nav ul li:hover{
+    text-decoration: line-through;
+    color: #00F3BB;
+}
+.tachado{
+    text-decoration: line-through;
+}
+.dot{
+    color: #0000EC;
+}
+.roboto_mono{
+    font-weight: 400;
+}
+.explore{
+    margin:0 auto;
+    background-color: #00F3BB;
+    width:228px;
+    height:48px;
+    display: block;
+}
+.explore:hover{
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    color: #fff;
+}
+footer ul li{
+    display: inline;
+    margin: 0 auto;
+}
+
