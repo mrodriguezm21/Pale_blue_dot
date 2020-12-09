@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;   
+}
+body{
+    font-family: $font;
+    color: $third_color;
+    margin: 5%;    
+    max-width: 320px;
+    a, a:visited{
+        text-decoration: none;
+        color: $third_color;
+        
+    }
+    ul{
+        li{
+            list-style: none;
+            display: inline ;
+        }
+    }
+    
+}
