@@ -13,15 +13,14 @@ body {
   color: #060A24;
   margin: 5%;
   max-width: 320px; }
-  body h1, body h2 {
+  body h1,
+  body h2 {
     font-weight: 400;
     font-size: 2.25em; }
-
-a:visited {
-  color: unset; }
-
-a {
-  text-decoration: none; }
+  body a:visited {
+    color: unset; }
+  body a {
+    text-decoration: none; }
 
 header section {
   display: flex;
@@ -95,7 +94,7 @@ main {
   /*Inicio seccion entrevistas*/
   /*Final seccion entrevistas*/
   /*Inicio seccion topicos*/
-  /*Final seccion entrevistas*/ }
+  /*Final seccion topicos*/ }
   main .tachado {
     text-decoration: line-through; }
   main .dot {
@@ -108,26 +107,23 @@ main {
   main .explore div a:hover {
     background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
     color: #FFF; }
-  main .interviews {
+  main .interviews ul {
     display: flex;
-    max-width: unset;
     flex-direction: column; }
     main .interviews ul li {
-      list-style: none; }
+      list-style: none;
+      display: flex; }
       main .interviews ul li img {
         width: 100%; }
   main .topics {
     display: flex;
-    flex-direction: column;
-    align-items: center; }
+    flex-direction: column; }
     main .topics ul li {
       display: flex;
-      flex-direction: column;
-      align-items: center; }
+      flex-direction: column; }
       main .topics ul li span {
+        text-align: center;
         font-size: 1.5em;
         font-weight: 600; }
-      main .topics ul li img {
-        align-self: stretch; }
 
 /*# sourceMappingURL=styles.css.map */

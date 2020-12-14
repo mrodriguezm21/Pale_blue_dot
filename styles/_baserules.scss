@@ -9,14 +9,15 @@ body {
   color: $third_color;
   margin: 5%;
   max-width: 320px;
-  h1,h2{
+  h1,
+  h2 {
     font-weight: 400;
     font-size: 2.25em;
   }
-}
-a:visited {
-  color: unset;
-}
-a {
-  text-decoration: none;
+  a:visited {
+    color: unset;
+  }
+  a {
+    text-decoration: none;
+  }
 }
