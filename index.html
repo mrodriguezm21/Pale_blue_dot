@@ -14,34 +14,37 @@
   <body>
     <header>
       <section>
-        <div class="header">
-          <img src="images/logo.svg" alt="svg" />
-          <nav>
+        <img src="images/logo.svg" alt="svg" class="img_header" />
+
+        <nav>
+          <div class="menu">
+            <input type="checkbox" name="" id="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
             <ul>
               <li><a href="">EPISODIOS</a></li>
               <li><a href="">NOSOTROS</a></li>
               <li><a href="">ENTREVISTAS</a></li>
               <li><a href="">TÓPICOS</a></li>
             </ul>
-          </nav>
-        </div>
+          </div>
+        </nav>
       </section>
     </header>
 
     <main>
-      <section>
+      <section class="explore">
         <div>
           <h1>
-            Hello <span class="tachado">world</span> pale blue dot<span
-              class="dot"
-              >.</span
-            >
+            Hello <span class="tachado">world</span><br />
+            pale blue dot<span class="dot">.</span>
           </h1>
           <p>
             Un podcast que explora el mundo de la programación. Nuevos
             episodios, todos los jueves cada 15 días.
           </p>
-          <a href="">CONOCÉ MÁS</a>
+          <a href="" class="test">CONOCÉ MÁS</a>
         </div>
       </section>
       <section id="Episodios">
@@ -83,10 +86,10 @@
       </section>
       <section>
         <div>
-          <img
+          <!-- <img
             src="images/phone.png"
             alt="Articulo de la historia secreta de la mujer en la codificacion "
-          />
+          />-->
           <h2>De dónde venimos</h2>
           <p>
             Our posturings, our imagined self-importance, the delusion that we
@@ -98,33 +101,45 @@
           </p>
         </div>
       </section>
-      <section id="entrevistas">
-        <img src="images/grace-hopper.png" alt="" />
-        <img src="images/Katie-Bouman.png" alt="" />
-        <img src="images/Margaret_Hamilton.png" alt="" />
-        <img src="images/AnE.R.A.Univac1103computerinthe1950s.png" alt="" />
-        <img
-          src="images/ComputeroperatorswithanEniac—theworld’sfirstprogrammablegeneral-purposecomputer.png"
-          alt=""
-        />
-        <img src="images/susan-kare.png" alt="" />
+      <section id="entrevistas" class="interviews">
+        <h2>Invitadas/os estelares</h2>
+        <ul>
+          <li><img src="images/grace-hopper.png" alt="" /></li>
+          <li><img src="images/Katie-Bouman.png" alt="" /></li>
+          <li><img src="images/Margaret_Hamilton.png" alt="" /></li>
+          <li>
+            <img src="images/AnE.R.A.Univac1103computerinthe1950s.png" alt="" />
+          </li>
+          <li>
+            <img
+              src="images/ComputeroperatorswithanEniac—theworld’sfirstprogrammablegeneral-purposecomputer.png"
+              alt=""
+            />
+          </li>
+          <li><img src="images/susan-kare.png" alt="" /></li>
+        </ul>
       </section>
-      <section id="topicos">
+      <section id="topicos" class="topics">
+        <h2>Algunos de nuestros temas</h2>
         <div>
-          <img src="images/icon1.svg" alt="" /><br />
-          <span>Trabajo remoto</span>
-        </div>
-        <div>
-          <img src="images/icon2.svg" alt="" /><br />
-          <span>Repensando la programación</span>
-        </div>
-        <div>
-          <img src="images/icon3.svg" alt="" /> <br />
-          <span>Bases del código</span>
-        </div>
-        <div>
-          <img src="images/icon4.svg" alt="" /><br />
-          <span>Seguridad informática</span>
+          <ul>
+            <li>
+              <img src="images/icon1.svg" alt="" /><br />
+              <span>Trabajo remoto</span>
+            </li>
+            <li>
+              <img src="images/icon2.svg" alt="" /><br />
+              <span>Repensando la programación</span>
+            </li>
+            <li>
+              <img src="images/icon3.svg" alt="" /> <br />
+              <span>Bases del código</span>
+            </li>
+            <li>
+              <img src="images/icon4.svg" alt="" /><br />
+              <span>Seguridad informática</span>
+            </li>
+          </ul>
         </div>
       </section>
     </main>

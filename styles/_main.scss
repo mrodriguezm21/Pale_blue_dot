@@ -1,16 +1,65 @@
-main{
-    .tachado{
-        text-decoration: line-through;
+main {
+  padding-top: 50px;
+
+  .tachado {
+    text-decoration: line-through;
+  }
+  .dot {
+    color: $first_color;
+  }
+  a {
+    background-color: $sec_color;
+  }
+  iframe {
+    margin: 3.4%;
+    width: 93.1%;
+  }
+  /*Inicio seccion inicio*/
+  .explore {
+    div {
+      a:hover {
+        background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+        color: $fifth_color;
+      }
     }
-    .dot{
-        color: $first_color;
+  }
+  /*Final seccion inicio*/
+  /*Inicio seccion entrevistas*/
+  .interviews {
+    display: flex;
+    max-width: unset;
+    flex-direction: column;
+
+    ul {
+      li {
+        list-style: none;
+        img {
+          width: 100%;
+        }
+      }
     }
-    a{
-        background-color: $sec_color;
-    }    
-    iframe{
-        margin: 3.4%;
-        width: 93.1%;        
+  }
+  /*Final seccion entrevistas*/
+  /*Inicio seccion topicos*/
+  .topics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    ul {
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        span {
+          font-size: 1.5em;
+          font-weight: 600;
+        }
+        img {
+          align-self: stretch;
+        }
+      }
     }
-    
+  }
+  /*Final seccion entrevistas*/
 }
