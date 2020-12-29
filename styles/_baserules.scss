@@ -4,14 +4,12 @@
   border: 0;
   box-sizing: border-box;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 body {
   font-family: $font;
   color: $third_color;
-  margin: 5%;
-  max-width: 320px;
   h1,
   h2 {
     font-weight: 400;

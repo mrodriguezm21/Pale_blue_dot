@@ -13,9 +13,7 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #060A24;
-  margin: 5%;
-  max-width: 320px; }
+  color: #060A24; }
   body h1,
   body h2 {
     font-weight: 400;
@@ -26,13 +24,7 @@ body {
     text-decoration: none; }
 
 header {
-  width: 100vw;
-  position: fixed;
-  height: 45px;
-  left: 0;
-  top: 0;
-  padding: 10px 5%;
-  background-color: #FFF; }
+  padding: 3%; }
   header section {
     display: flex;
     justify-content: space-between; }
@@ -98,37 +90,81 @@ header {
             line-height: 28px;
             display: block; }
 
+.btn, main .explore div a, main .pre-footer a {
+  display: block;
+  margin: 0 auto;
+  background-color: #00F3BB;
+  padding: 15px;
+  font-weight: 500;
+  text-align: center; }
+
 main {
   padding-top: 50px;
   /*Inicio seccion inicio*/
   /*Final seccion inicio*/
+  /*Inicio seccion episodios*/
+  /*Final seccion episodios*/
+  /*Inicio seccion nosotros*/
+  /*Final seccion nosotros*/
   /*Inicio seccion entrevistas*/
   /*Final seccion entrevistas*/
   /*Inicio seccion topicos*/
   /*Final seccion topicos*/ }
-  main .tachado {
-    text-decoration: line-through; }
-  main .dot {
-    color: #0000EC; }
-  main a {
-    background-color: #00F3BB; }
-  main iframe {
-    margin: 3.4%;
-    width: 93.1%; }
-  main .explore div a:hover {
-    background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
-    color: #FFF; }
-  main .interviews ul {
-    display: flex;
-    flex-direction: column; }
-    main .interviews ul li {
-      list-style: none;
-      display: flex; }
-      main .interviews ul li img {
-        width: 100%; }
+  main .explore {
+    margin: 5%; }
+    main .explore div {
+      /* a {
+         display: block;
+         margin: 0 auto;
+         background-color: $sec_color;
+         padding: 15px;
+         font-weight: 500;
+         text-align: center;
+       }*/ }
+      main .explore div .tachado {
+        text-decoration: line-through; }
+      main .explore div .dot {
+        color: #0000EC; }
+      main .explore div a:hover {
+        background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+        color: #FFF; }
+  main #episodios {
+    background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+    clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
+    z-index: -2;
+    padding-top: 50px;
+    padding-bottom: 75px; }
+    main #episodios * {
+      padding: 0% 5%; }
+    main #episodios h2 {
+      color: #FFF; }
+    main #episodios iframe {
+      width: 100%; }
+  main .us div ul {
+    list-style: none; }
+    main .us div ul li img {
+      width: 100%; }
+  main .us div p,
+  main .us div h2 {
+    padding: 0 5%; }
+  main .interviews h2 {
+    padding: 0 5%; }
+  main .interviews div {
+    width: 100%; }
+    main .interviews div ul {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch; }
+      main .interviews div ul li {
+        list-style: none;
+        display: flex; }
+        main .interviews div ul li img {
+          width: 100%; }
   main .topics {
     display: flex;
     flex-direction: column; }
+    main .topics h2 {
+      margin: 5%; }
     main .topics ul li {
       display: flex;
       flex-direction: column; }
@@ -136,5 +172,33 @@ main {
         text-align: center;
         font-size: 1.5em;
         font-weight: 600; }
+  main .pre-footer {
+    background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+    clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px; }
+    main .pre-footer h2, main .pre-footer a {
+      margin: 5%; }
+    main .pre-footer h2 {
+      color: #FFF; }
+    main .pre-footer a:hover {
+      background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+      color: #FFF; }
+
+footer {
+  margin-top: 5%;
+  text-align: center;
+  display: flex;
+  flex-flow: wrap; }
+  footer span {
+    width: 100%; }
+  footer ul {
+    list-style: none;
+    display: flex;
+    margin: 0 auto; }
+    footer ul li {
+      display: inline-flex;
+      padding: 20px; }
 
 /*# sourceMappingURL=styles.css.map */
