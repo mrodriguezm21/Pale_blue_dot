@@ -1,5 +1,6 @@
 header {
   margin: 3%;
+  /*Inicio seccion header*/
   section {
     display: flex;
     justify-content: space-between;
@@ -80,4 +81,34 @@ header {
       }
     }
   }
+  /*Final seccion header*/
+  /*Inicio seccion inicio*/
+  .explore {
+    margin: 5%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    h1 {
+      display: block;
+      width: 230px;
+    }
+    div {
+      #p-desktop {
+        display: none;
+      }
+      .tachado {
+        text-decoration: line-through;
+      }
+      .dot {
+        color: $first_color;
+      }
+      a {
+        @extend .btn;
+      }
+      a:hover {
+        background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+        color: $fifth_color;
+      }
+    }
+  }
+  /*Final seccion inicio*/
 }

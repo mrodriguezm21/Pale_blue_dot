@@ -25,7 +25,11 @@ body {
     text-decoration: none; }
 
 header {
-  margin: 3%; }
+  margin: 3%;
+  /*Inicio seccion header*/
+  /*Final seccion header*/
+  /*Inicio seccion inicio*/
+  /*Final seccion inicio*/ }
   header section {
     display: flex;
     justify-content: space-between; }
@@ -89,8 +93,24 @@ header {
             padding: 16px 5%;
             line-height: 28px;
             display: block; }
+  header .explore {
+    margin: 5%;
+    padding-top: 50px;
+    padding-bottom: 20px; }
+    header .explore h1 {
+      display: block;
+      width: 230px; }
+    header .explore div #p-desktop {
+      display: none; }
+    header .explore div .tachado {
+      text-decoration: line-through; }
+    header .explore div .dot {
+      color: #0000EC; }
+    header .explore div a:hover {
+      background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+      color: #FFF; }
 
-.btn, main .explore div a, footer .pre-footer a {
+.btn, header .explore div a, footer .footer a {
   display: block;
   margin: 0 auto;
   background-color: #00F3BB;
@@ -99,10 +119,7 @@ header {
   text-align: center; }
 
 main {
-  padding-top: 50px;
   margin: 0 auto;
-  /*Inicio seccion inicio*/
-  /*Final seccion inicio*/
   /*Inicio seccion episodios*/
   /*Final seccion episodios*/
   /*Inicio seccion nosotros*/
@@ -111,21 +128,6 @@ main {
   /*Final seccion entrevistas*/
   /*Inicio seccion topicos*/
   /*Final seccion topicos*/ }
-  main .explore {
-    margin: 5%;
-    padding-bottom: 20px; }
-    main .explore h1 {
-      display: block;
-      width: 230px; }
-    main .explore div #p-desktop {
-      display: none; }
-    main .explore div .tachado {
-      text-decoration: line-through; }
-    main .explore div .dot {
-      color: #0000EC; }
-    main .explore div a:hover {
-      background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
-      color: #FFF; }
   main #episodios {
     background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
     transform: skewY(-6deg);
@@ -148,9 +150,12 @@ main {
       list-style: none; }
       main .us div ul li img {
         width: 100%; }
-    main .us .guia2 p,
-    main .us .guia2 h2 {
-      padding: 0 5%; }
+    main .us .guia2 {
+      align-self: center; }
+      main .us .guia2 p,
+      main .us .guia2 h2 {
+        padding: 0 5%;
+        max-width: 500px; }
   main .interviews h2 {
     padding: 0 5%; }
   main .interviews div {
@@ -177,34 +182,39 @@ main {
         font-size: 1.5em;
         font-weight: 600; }
 
-footer .pre-footer {
-  background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
-  clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
-  padding: 30px;
-  text-align: center;
-  margin-top: 50px; }
-  footer .pre-footer h2,
-  footer .pre-footer a {
-    margin: 5%; }
-  footer .pre-footer h2 {
-    color: #FFF; }
-  footer .pre-footer a:hover {
-    background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
-    color: #FFF; }
-footer .copyright {
-  margin-top: 5%;
-  text-align: center;
-  display: flex;
-  flex-flow: wrap; }
-  footer .copyright span {
-    width: 100%; }
-  footer .copyright ul {
-    list-style: none;
+footer {
+  /*Inicio seccion footer*/
+  /*Final seccion footer*/
+  /*Inicio seccion copyright*/ }
+  footer .footer {
+    background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+    clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px; }
+    footer .footer h2,
+    footer .footer a {
+      margin: 5%; }
+    footer .footer h2 {
+      color: #FFF; }
+    footer .footer a:hover {
+      background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+      color: #FFF; }
+  footer .copyright {
+    margin-top: 5%;
+    text-align: center;
     display: flex;
-    margin: 0 auto; }
-    footer .copyright ul li {
-      display: inline-flex;
-      padding: 20px; }
+    flex-flow: wrap;
+    /*Final seccion copyright*/ }
+    footer .copyright span {
+      width: 100%; }
+    footer .copyright ul {
+      list-style: none;
+      display: flex;
+      margin: 0 auto; }
+      footer .copyright ul li {
+        display: inline-flex;
+        padding: 20px; }
 
 @media screen and (min-width: 768px) {
   body {
@@ -212,41 +222,57 @@ footer .copyright {
     body h1 {
       font-size: 4em; }
 
-  header section img {
-    width: 4%; }
-  header section div {
-    align-self: center;
-    width: 100%; }
-    header section div nav input {
-      display: none; }
-    header section div nav span {
-      display: none; }
-    header section div nav ul {
-      overflow: unset;
-      background-color: unset;
-      height: unset;
-      position: unset;
-      display: flex;
-      justify-content: space-evenly; }
-      header section div nav ul li {
-        color: #060A24;
-        position: unset; }
-        header section div nav ul li a {
-          display: unset;
-          position: unset;
-          padding: unset;
-          line-height: unset;
-          color: unset; }
-        header section div nav ul li a:hover {
-          text-decoration: line-through;
-          color: #00F3BB; }
-        header section div nav ul li a:active {
-          color: rgba(6, 10, 36, 0.56); }
+  header {
+    /*Inicio seccion header*/
+    /*Final seccion header*/
+    /*Inicio seccion inicio*/
+    /*Final seccion inicio*/ }
+    header section img {
+      width: 4%; }
+    header section div {
+      align-self: center;
+      width: 100%; }
+      header section div nav input {
+        display: none; }
+      header section div nav span {
+        display: none; }
+      header section div nav ul {
+        overflow: unset;
+        background-color: unset;
+        height: unset;
+        position: unset;
+        display: flex;
+        justify-content: space-evenly; }
+        header section div nav ul li {
+          color: #060A24;
+          position: unset; }
+          header section div nav ul li a {
+            display: unset;
+            position: unset;
+            padding: unset;
+            line-height: unset;
+            color: unset; }
+          header section div nav ul li a:hover {
+            text-decoration: line-through;
+            color: #00F3BB; }
+          header section div nav ul li a:active {
+            color: rgba(6, 10, 36, 0.56); }
+    header .explore {
+      max-width: 1220px;
+      margin: 0 auto; }
+      header .explore h1 {
+        width: unset; }
+      header .explore div #p-mobile {
+        display: none; }
+      header .explore div #p-desktop {
+        display: block;
+        width: 600px; }
+      header .explore div a {
+        width: 220px;
+        margin: unset; }
 
   main {
     padding-top: unset;
-    /*Inicio seccion inicio*/
-    /*Final seccion inicio*/
     /*Inicio seccion episodios*/
     /*Final seccion episodios*/
     /*Inicio seccion nosotros*/
@@ -255,19 +281,6 @@ footer .copyright {
     /*Final seccion entrevistas*/
     /*Inicio seccion topicos*/
     /*Final seccion topicos*/ }
-    main .explore {
-      max-width: 1220px;
-      margin: 0 auto; }
-      main .explore h1 {
-        width: unset; }
-      main .explore div #p-mobile {
-        display: none; }
-      main .explore div #p-desktop {
-        display: block;
-        width: 600px; }
-      main .explore div a {
-        width: 220px;
-        margin: unset; }
     main #episodios {
       padding-top: 100px;
       padding-bottom: 125px; }
@@ -277,7 +290,7 @@ footer .copyright {
         margin: 0 auto;
         max-width: 1440px; }
         main #episodios .rev-skew h2 {
-          transform: translate(150px); }
+          transform: translate(110px); }
         main #episodios .rev-skew .tworowflex {
           margin-top: 20px;
           display: flex;
@@ -318,25 +331,30 @@ footer .copyright {
         justify-content: space-evenly;
         flex-direction: row; }
 
-  footer .pre-footer {
-    clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
-    padding-top: 100px;
-    padding-bottom: 200px; }
-    footer .pre-footer div h2 {
-      margin-bottom: 2%; }
-    footer .pre-footer div a {
-      width: 220px;
-      margin: 0 auto; }
-  footer .copyright {
-    max-width: 1220px;
-    margin: 0 auto;
-    justify-content: space-between;
-    flex-flow: unset; }
-    footer .copyright span {
-      width: unset;
-      align-self: center; }
-    footer .copyright ul {
-      display: unset;
-      margin: unset; } }
+  footer {
+    /*Inicio seccion footer*/
+    /*Final seccion footer*/
+    /*Inicio seccion copyright*/
+    /*Final seccion copyright*/ }
+    footer .footer {
+      clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+      padding-top: 100px;
+      padding-bottom: 150px; }
+      footer .footer div h2 {
+        margin-bottom: 2%; }
+      footer .footer div a {
+        width: 220px;
+        margin: 0 auto; }
+    footer .copyright {
+      max-width: 1220px;
+      margin: 0 auto;
+      justify-content: space-between;
+      flex-flow: unset; }
+      footer .copyright span {
+        width: unset;
+        align-self: center; }
+      footer .copyright ul {
+        display: unset;
+        margin: unset; } }
 
 /*# sourceMappingURL=styles.css.map */

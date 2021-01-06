@@ -1,5 +1,3 @@
-
-
 @media screen and (min-width: 768px) {
   body {
     margin: 0 auto;
@@ -8,6 +6,7 @@
     }
   }
   header {
+    /*Inicio seccion header*/
     section {
       img {
         width: 4%;
@@ -53,9 +52,7 @@
         }
       }
     }
-  }
-  main {
-    padding-top: unset;
+    /*Final seccion header*/
     /*Inicio seccion inicio*/
     .explore {
       max-width: 1220px;
@@ -75,10 +72,13 @@
           width: 220px;
           margin: unset;
         }
-        
       }
     }
     /*Final seccion inicio*/
+  }
+  main {
+    padding-top: unset;
+
     /*Inicio seccion episodios*/
     #episodios {
       padding-top: 100px;
@@ -90,7 +90,7 @@
         margin: 0 auto;
         max-width: 1440px;
         h2 {
-          transform: translate(150px);
+          transform: translate(110px);
         }
         .tworowflex {
           margin-top: 20px;
@@ -157,42 +157,43 @@
         display: flex;
         justify-content: space-evenly;
         flex-direction: row;
-        
       }
     }
     /*Final seccion topicos*/
-    
   }
-  footer{
-    .pre-footer{
+  footer {
+    /*Inicio seccion footer*/
+    .footer {
       clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
       padding-top: 100px;
-      padding-bottom: 200px;
-      div{        
-        h2{
+      padding-bottom: 150px;
+      div {
+        h2 {
           margin-bottom: 2%;
         }
-          a {
-            width: 220px;
-            margin: 0 auto;
-          }
-        
+        a {
+          width: 220px;
+          margin: 0 auto;
+        }
       }
     }
-    .copyright{
-    max-width: 1220px;
-    margin: 0 auto;
-    justify-content: space-between;
-    flex-flow: unset;
-    span{
-      width: unset;
-      align-self: center;
+    /*Final seccion footer*/
+
+    /*Inicio seccion copyright*/
+    .copyright {
+      max-width: 1220px;
+      margin: 0 auto;
+      justify-content: space-between;
+      flex-flow: unset;
+      span {
+        width: unset;
+        align-self: center;
+      }
+      ul {
+        display: unset;
+        margin: unset;
+      }
     }
-    ul{
-      display: unset;
-      margin: unset;
-      
-    }
+    /*Final seccion copyright*/
   }
-}
 }

@@ -1,41 +1,47 @@
-footer{    
-    
-    .pre-footer {
-        background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
-        clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
-        padding: 30px;
-        text-align: center;
-        margin-top: 50px;
-        h2,
-        a {
-          margin: 5%;
-        }
-        h2 {
-          color: $fifth_color;
-        }
-        a {
-          @extend .btn;
-        }
-        a:hover {
-          background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
-          color: $fifth_color;
-        }
-      }
-    .copyright{
-        margin-top: 5%;
+footer {
+  /*Inicio seccion footer*/
+
+  .footer {
+    background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+    clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px;
+    h2,
+    a {
+      margin: 5%;
+    }
+    h2 {
+      color: $fifth_color;
+    }
+    a {
+      @extend .btn;
+    }
+    a:hover {
+      background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+      color: $fifth_color;
+    }
+  }
+  /*Final seccion footer*/
+
+  /*Inicio seccion copyright*/
+  .copyright {
+    margin-top: 5%;
     text-align: center;
     display: flex;
     flex-flow: wrap;
-    span{
-        width: 100%;
+    span {
+      width: 100%;
     }
-    ul{
-        list-style: none;    
-        display: flex;    
-        margin: 0 auto;
-        li{           
-            display: inline-flex;            
-            padding: 20px ;
-        }
+    ul {
+      list-style: none;
+      display: flex;
+      margin: 0 auto;
+      li {
+        display: inline-flex;
+        padding: 20px;
+      }
     }
-}}
+    /*Final seccion copyright*/
+  }
+}
