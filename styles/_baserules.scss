@@ -8,8 +8,9 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  margin: 0 auto;
   font-family: $font;
-  color: $third_color;
+  color: $third_color;  
   h1,
   h2 {
     font-weight: 400;

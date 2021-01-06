@@ -2,33 +2,34 @@
   display: block;
   margin: 0 auto;
   background-color: $sec_color;
-  padding: 15px;
+  padding: 15px 0px;
   font-weight: 500;
-  text-align: center;  
+  text-align: center;
 }
 main {
   padding-top: 50px;
+  margin: 0 auto;
   /*Inicio seccion inicio*/
   .explore {
     margin: 5%;
+    padding-bottom: 20px;
+    h1 {
+      display: block;
+      width: 230px;
+    }
     div {
+      #p-desktop {
+        display: none;
+      }
       .tachado {
         text-decoration: line-through;
       }
       .dot {
         color: $first_color;
       }
-      a{
+      a {
         @extend .btn;
       }
-     /* a {
-        display: block;
-        margin: 0 auto;
-        background-color: $sec_color;
-        padding: 15px;
-        font-weight: 500;
-        text-align: center;
-      }*/
       a:hover {
         background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
         color: $fifth_color;
@@ -39,23 +40,29 @@ main {
   /*Inicio seccion episodios*/
   #episodios {
     background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
-    clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
+    transform: skewY(-6deg);
     z-index: -2;
     padding-top: 50px;
-    padding-bottom: 75px;
+    padding-bottom: 160px;
     * {
       padding: 0% 5%;
     }
-    h2 {
-      color: $fifth_color;
-    }
-    iframe {
-      width: 100%;
+    .rev-skew {
+      transform: skewY(6deg);
+      h2 {
+        color: $fifth_color;
+      }
+      iframe {
+        width: 100%;
+      }
     }
   }
   /*Final seccion episodios*/
   /*Inicio seccion nosotros*/
   .us {
+    /*Superponer imagen de telefono*/
+    position: relative;
+    transform: translate(0px, -100px);
     div {
       ul {
         list-style: none;
@@ -65,6 +72,8 @@ main {
           }
         }
       }
+    }
+    .guia2 {
       p,
       h2 {
         padding: 0 5%;
@@ -98,7 +107,7 @@ main {
   .topics {
     display: flex;
     flex-direction: column;
-    
+
     h2 {
       margin: 5%;
     }
@@ -115,24 +124,5 @@ main {
     }
   }
   /*Final seccion topicos*/
-  .pre-footer{
-    background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
-    clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
-    padding: 30px;
-    text-align: center;
-    margin-top: 50px;
-    h2, a{
-      margin: 5%;
-    }
-    h2{
-      color: $fifth_color;
-    }
-    a{
-      @extend .btn;
-    }
-    a:hover {
-      background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
-      color: $fifth_color;
-    }
-  }
+  
 }
