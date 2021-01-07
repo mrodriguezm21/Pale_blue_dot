@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*Importacion fuentes*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /*Variables*/
 * {
-  margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box; }
@@ -25,33 +25,35 @@ body {
     text-decoration: none; }
 
 header {
-  margin: 3%;
+  width: 100vw;
   /*Inicio seccion header*/
   /*Final seccion header*/
   /*Inicio seccion inicio*/
   /*Final seccion inicio*/ }
-  header section {
+  header .navbar {
+    margin: 3%;
     display: flex;
     justify-content: space-between; }
-    header section img {
+    header .navbar img {
+      max-width: 100%;
       align-self: center; }
-    header section nav {
+    header .navbar nav {
       /*checkbox transparente y en primer plano*/
       /*animación del menu que se desplega*/
       /*span -lineas del menu hamburguesa-*/
       /*movimiento a cruz*/
       /*posicion absolute para que se posicione debajo del resto del header - top medida del header*/ }
-      header section nav input {
+      header .navbar nav input {
         display: block;
         width: 40px;
         height: 32px;
         opacity: 0;
         z-index: 2;
         position: absolute; }
-      header section nav input[type="checkbox"]:checked ~ ul {
+      header .navbar nav input[type="checkbox"]:checked ~ ul {
         height: 240px;
         transition: height 0.5s ease-in-out; }
-      header section nav span {
+      header .navbar nav span {
         display: block;
         width: 25px;
         height: 2.5px;
@@ -61,19 +63,19 @@ header {
         z-index: 1;
         transform-origin: 3px 0px;
         transition: transform 0.5s ease, opacity 0.55s ease; }
-      header section nav span:first-child {
+      header .navbar nav span:first-child {
         transform-origin: 0% 0%; }
-      header section nav span:nth-last-child(2) {
+      header .navbar nav span:nth-last-child(2) {
         transform-origin: 0% 100%; }
-      header section nav input:checked ~ span {
+      header .navbar nav input:checked ~ span {
         opacity: 1;
         transform: rotate(45deg) translate(2px, 1px); }
-      header section nav input:checked ~ span:nth-last-child(3) {
+      header .navbar nav input:checked ~ span:nth-last-child(3) {
         opacity: 0;
         transform: rotate(0deg) scale(0.2, 0.2); }
-      header section nav input:checked ~ span:nth-last-child(2) {
+      header .navbar nav input:checked ~ span:nth-last-child(2) {
         transform: rotate(-45deg) translate(1px, 0px); }
-      header section nav ul {
+      header .navbar nav ul {
         width: 100%;
         position: absolute;
         top: 45px;
@@ -83,10 +85,10 @@ header {
         height: 0px;
         transition: height 0.5s ease;
         background-color: #0000EC; }
-        header section nav ul li {
+        header .navbar nav ul li {
           position: relative;
           color: #FFF; }
-          header section nav ul li a {
+          header .navbar nav ul li a {
             position: relative;
             text-decoration: none;
             color: #FFF;
@@ -110,16 +112,19 @@ header {
       background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
       color: #FFF; }
 
+/*Clase de boton*/
 .btn, header .explore div a, footer .footer a {
   display: block;
   margin: 0 auto;
-  background-color: #00F3BB;
   padding: 15px 0px;
-  font-weight: 500;
-  text-align: center; }
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  background-color: #00F3BB;
+  color: #060A24; }
 
 main {
-  margin: 0 auto;
+  width: 100vw;
   /*Inicio seccion episodios*/
   /*Final seccion episodios*/
   /*Inicio seccion nosotros*/
@@ -128,6 +133,8 @@ main {
   /*Final seccion entrevistas*/
   /*Inicio seccion topicos*/
   /*Final seccion topicos*/ }
+  main a:visited {
+    color: unset; }
   main #episodios {
     background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
     transform: skewY(-6deg);
@@ -141,7 +148,8 @@ main {
       main #episodios .rev-skew h2 {
         color: #FFF; }
       main #episodios .rev-skew iframe {
-        width: 100%; }
+        width: 100%;
+        max-width: 100%; }
   main .us {
     /*Superponer imagen de telefono*/
     position: relative;
@@ -149,7 +157,8 @@ main {
     main .us div ul {
       list-style: none; }
       main .us div ul li img {
-        width: 100%; }
+        width: 100%;
+        max-width: 100%; }
     main .us .guia2 {
       align-self: center; }
       main .us .guia2 p,
@@ -168,7 +177,8 @@ main {
         list-style: none;
         display: flex; }
         main .interviews div ul li img {
-          width: 100%; }
+          width: 100%;
+          max-width: 100%; }
   main .topics {
     display: flex;
     flex-direction: column; }
@@ -183,6 +193,7 @@ main {
         font-weight: 600; }
 
 footer {
+  width: 100vw;
   /*Inicio seccion footer*/
   /*Final seccion footer*/
   /*Inicio seccion copyright*/ }
@@ -215,6 +226,8 @@ footer {
       footer .copyright ul li {
         display: inline-flex;
         padding: 20px; }
+        footer .copyright ul li i {
+          color: #060A24; }
 
 @media screen and (min-width: 768px) {
   body {
@@ -227,35 +240,35 @@ footer {
     /*Final seccion header*/
     /*Inicio seccion inicio*/
     /*Final seccion inicio*/ }
-    header section img {
+    header .navbar img {
       width: 4%; }
-    header section div {
+    header .navbar div {
       align-self: center;
       width: 100%; }
-      header section div nav input {
+      header .navbar div nav input {
         display: none; }
-      header section div nav span {
+      header .navbar div nav span {
         display: none; }
-      header section div nav ul {
+      header .navbar div nav ul {
         overflow: unset;
         background-color: unset;
         height: unset;
         position: unset;
         display: flex;
         justify-content: space-evenly; }
-        header section div nav ul li {
+        header .navbar div nav ul li {
           color: #060A24;
           position: unset; }
-          header section div nav ul li a {
+          header .navbar div nav ul li a {
             display: unset;
             position: unset;
             padding: unset;
             line-height: unset;
             color: unset; }
-          header section div nav ul li a:hover {
+          header .navbar div nav ul li a:hover {
             text-decoration: line-through;
             color: #00F3BB; }
-          header section div nav ul li a:active {
+          header .navbar div nav ul li a:active {
             color: rgba(6, 10, 36, 0.56); }
     header .explore {
       max-width: 1220px;
@@ -290,7 +303,7 @@ footer {
         margin: 0 auto;
         max-width: 1440px; }
         main #episodios .rev-skew h2 {
-          transform: translate(110px); }
+          padding-left: 110px; }
         main #episodios .rev-skew .tworowflex {
           margin-top: 20px;
           display: flex;

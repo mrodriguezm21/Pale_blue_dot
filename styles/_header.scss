@@ -1,10 +1,13 @@
 header {
-  margin: 3%;
+  width: 100vw;
+  
   /*Inicio seccion header*/
-  section {
+  .navbar {
+    margin: 3%;
     display: flex;
     justify-content: space-between;
     img {
+      max-width: 100%;
       align-self: center;
     }
     nav {

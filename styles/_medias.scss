@@ -7,7 +7,7 @@
   }
   header {
     /*Inicio seccion header*/
-    section {
+    .navbar {
       img {
         width: 4%;
       }
@@ -90,7 +90,7 @@
         margin: 0 auto;
         max-width: 1440px;
         h2 {
-          transform: translate(110px);
+          padding-left: 110px;
         }
         .tworowflex {
           margin-top: 20px;
@@ -191,7 +191,7 @@
       }
       ul {
         display: unset;
-        margin: unset;
+        margin: unset;        
       }
     }
     /*Final seccion copyright*/

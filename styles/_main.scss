@@ -1,13 +1,21 @@
-.btn {
+/*Clase de boton*/
+.btn {  
   display: block;
   margin: 0 auto;
-  background-color: $sec_color;
-  padding: 15px 0px;
-  font-weight: 500;
+  padding: 15px 0px;  
+  font-family: $font2;
+  font-weight: 700;
   text-align: center;
+  background-color: $sec_color; 
+  color: $third_color; 
+  
 }
 main {
-  margin: 0 auto;
+  width: 100vw;
+  a:visited{
+    color: unset;
+  }
+  
   
   /*Inicio seccion episodios*/
   #episodios {
@@ -26,6 +34,7 @@ main {
       }
       iframe {
         width: 100%;
+        max-width: 100%;
       }
     }
   }
@@ -40,7 +49,9 @@ main {
         list-style: none;
         li {
           img {
+            
             width: 100%;
+            max-width: 100%;
           }
         }
       }
@@ -61,7 +72,7 @@ main {
       padding: 0 5%;
     }
     div {
-      width: 100%;
+      width: 100%;      
       ul {
         display: flex;
         flex-direction: column;
@@ -69,8 +80,9 @@ main {
         li {
           list-style: none;
           display: flex;
-          img {
+          img {            
             width: 100%;
+            max-width: 100%;
           }
         }
       }
