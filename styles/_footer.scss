@@ -1,5 +1,7 @@
 footer {
+  overflow-x: unset;
   width: 100vw;
+  max-width: 100vw;
   /*Inicio seccion footer*/
   .footer {
     background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);

@@ -12,6 +12,10 @@
 }
 main {
   width: 100vw;
+  max-width: 100vw;
+  margin-top: 100px;
+  overflow-x: unset;
+  
   a:visited{
     color: unset;
   }

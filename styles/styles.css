@@ -4,12 +4,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /*Variables*/
 * {
+  margin: 0;
   padding: 0;
   border: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  max-width: 100vw; }
 
 body {
   margin: 0 auto;
@@ -26,6 +29,8 @@ body {
 
 header {
   width: 100vw;
+  max-width: 100vw;
+  overflow-x: unset;
   /*Inicio seccion header*/
   /*Final seccion header*/
   /*Inicio seccion inicio*/
@@ -45,8 +50,6 @@ header {
       /*posicion absolute para que se posicione debajo del resto del header - top medida del header*/ }
       header .navbar nav input {
         display: block;
-        width: 40px;
-        height: 32px;
         opacity: 0;
         z-index: 2;
         position: absolute; }
@@ -58,7 +61,6 @@ header {
         width: 25px;
         height: 2.5px;
         margin-bottom: 6.5px;
-        position: relative;
         background: #000;
         z-index: 1;
         transform-origin: 3px 0px;
@@ -125,6 +127,9 @@ header {
 
 main {
   width: 100vw;
+  max-width: 100vw;
+  margin-top: 100px;
+  overflow-x: unset;
   /*Inicio seccion episodios*/
   /*Final seccion episodios*/
   /*Inicio seccion nosotros*/
@@ -193,7 +198,9 @@ main {
         font-weight: 600; }
 
 footer {
+  overflow-x: unset;
   width: 100vw;
+  max-width: 100vw;
   /*Inicio seccion footer*/
   /*Final seccion footer*/
   /*Inicio seccion copyright*/ }
