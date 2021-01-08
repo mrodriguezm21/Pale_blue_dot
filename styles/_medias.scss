@@ -6,7 +6,8 @@
     }
   }
   header {
-    /*Inicio seccion header*/
+
+    /*Inicio seccion navbar*/
     .navbar {
       img {
         width: 4%;
@@ -52,11 +53,12 @@
         }
       }
     }
-    /*Final seccion header*/
-    /*Inicio seccion inicio*/
+    /*Final seccion navbar*/
+
+    /*Inicio seccion explore*/
     .explore {
       max-width: 1220px;
-      margin: 0 auto;
+      margin: 100px auto;
       h1 {
         width: unset;
       }
@@ -68,13 +70,16 @@
           display: block;
           width: 600px;
         }
+        .dot {
+          color: $first_color;
+        }
         a {
           width: 220px;
           margin: unset;
         }
       }
     }
-    /*Final seccion inicio*/
+    /*Final seccion explore*/
   }
   main {
     padding-top: unset;
@@ -88,9 +93,9 @@
       }
       .rev-skew {
         margin: 0 auto;
-        max-width: 1440px;
+        max-width: 1340px;
         h2 {
-          padding-left: 110px;
+          padding-left: 60px;
         }
         .tworowflex {
           margin-top: 20px;
@@ -99,6 +104,7 @@
           justify-content: space-between;
 
           iframe {
+            padding: unset;
             margin-bottom: 60px;
             width: 47%;
           }
@@ -106,6 +112,7 @@
       }
     }
     /*Final seccion episodios*/
+
     /*Inicio seccion nosotros*/
 
     .us {
@@ -114,15 +121,16 @@
       display: flex;
       transform: translate(0px, -60px);
 
-      .guia1 {
+      .contenedor-us {
         width: 40%;
 
-        .guia2 {
+        .text-us {
           width: 65%;
         }
       }
     }
     /*Final seccion nosotros*/
+
     /*Inicio seccion entrevistas*/
     .interviews {
       h2 {
@@ -145,6 +153,7 @@
       }
     }
     /*Final seccion entrevistas*/
+
     /*Inicio seccion topicos*/
     .topics {
       max-width: 1220px;
@@ -161,7 +170,9 @@
     }
     /*Final seccion topicos*/
   }
+
   footer {
+
     /*Inicio seccion footer*/
     .footer {
       clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);

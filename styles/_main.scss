@@ -28,27 +28,27 @@ main {
     z-index: -2;
     padding-top: 50px;
     padding-bottom: 160px;
-    * {
-      padding: 0% 5%;
-    }
+    
     .rev-skew {
       transform: skewY(6deg);
       h2 {
+        padding: 0% 5%;
         color: $fifth_color;
       }
       iframe {
-        width: 100%;
-        max-width: 100%;
+        padding: 0% 3.4%;
+        width: 100%;        
       }
     }
   }
   /*Final seccion episodios*/
+
   /*Inicio seccion nosotros*/
   .us {
     /*Superponer imagen de telefono*/
     position: relative;
     transform: translate(0px, -100px);
-    div {
+    .contenedor-us {
       ul {
         list-style: none;
         li {
@@ -60,7 +60,7 @@ main {
         }
       }
     }
-    .guia2 {
+    .text-us {
       align-self: center;
       p,
       h2 {
@@ -70,6 +70,7 @@ main {
     }
   }
   /*Final seccion nosotros*/
+
   /*Inicio seccion entrevistas*/
   .interviews {
     h2 {
@@ -93,6 +94,7 @@ main {
     }
   }
   /*Final seccion entrevistas*/
+  
   /*Inicio seccion topicos*/
   .topics {
     display: flex;
@@ -105,10 +107,11 @@ main {
       li {
         display: flex;
         flex-direction: column;
+        padding-bottom: 50px;
         span {
           text-align: center;
           font-size: 1.5em;
-          font-weight: 600;
+          font-weight: 700;
         }
       }
     }

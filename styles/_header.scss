@@ -3,9 +3,9 @@ header {
   max-width: 100vw;
   overflow-x: unset;
   
-  /*Inicio seccion header*/
+  /*Inicio seccion navbar*/
   .navbar {
-    margin: 3%;
+    margin: 1% 6.9%;
     display: flex;
     justify-content: space-between;
     img {
@@ -84,8 +84,9 @@ header {
       }
     }
   }
-  /*Final seccion header*/
-  /*Inicio seccion inicio*/
+  /*Final seccion navbar*/
+
+  /*Inicio seccion explore*/
   .explore {
     margin: 5%;
     padding-top: 50px;
@@ -100,10 +101,7 @@ header {
       }
       .tachado {
         text-decoration: line-through;
-      }
-      .dot {
-        color: $first_color;
-      }
+      }      
       a {
         @extend .btn;
       }
@@ -113,5 +111,5 @@ header {
       }
     }
   }
-  /*Final seccion inicio*/
+  /*Final seccion explore*/
 }
